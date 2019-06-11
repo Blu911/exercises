@@ -1,12 +1,10 @@
 package algorithms;
 
-public class BubbleSort {
+class BubbleSort {
 
-
-    static void bubbleSort(int[] array) {
+    void sort(int[] array) {
         boolean sorted = false;
         int temp;
-
         while (!sorted) {
             sorted = true;
             for (int i = 0; i < array.length - 1; i++) {
@@ -20,16 +18,16 @@ public class BubbleSort {
         }
     }
 
-    static void bubbleSortKobietyDoKodu(int[] collection) {
-        for (int i = 0; i < collection.length; i++) {
+    void sortKobietyDoKodu(int[] collection) {
+        for (int i = 0; i < collection
+                .length; i++) {
             for (int j = 1; j < collection.length; j++) {
                 if (collection[j] < collection[j - 1]) {
                     int temp = collection[j - 1];
-                    collection[j - 1] = collection[i];
-                    collection[i] = temp;
+                    collection[j - 1] = collection[j];
+                    collection[j] = temp;
                 }
             }
         }
     }
-
 }
