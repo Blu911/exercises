@@ -11,6 +11,7 @@ package algorithms.practicetasks;
  *
  * Entry - The first line of entry contains 3 integers x, y, s (1 <= x < y, s <= 10 ^ 9)
  * meaning respectively: frog position, the end of the road and the length of the frog stroke.
+ *
  * Exit - The first and only line of the output should contain one integer equal to
  * the minimum number of jumps, after which the frog will jump to the end of the road or skip it.
  */
